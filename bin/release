@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+
+cat <<EOF
+---
+addons:
+config_vars:
+default_process_types:
+  web: ruby -rwebrick -e "WEBrick::HTTPServer.new(:Port => ENV['PORT'],:DocumentRoot => '$BUILD_DIR/builds').start"
+EOF
