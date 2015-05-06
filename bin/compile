@@ -26,5 +26,7 @@ export_env_dir $ENV_DIR
 mkdir $output_dir
 $BUILD_DIR/build $output_dir
 
-tar -cvf builds.tar builds/
-tar -cvzf builds.tgz builds/
+
+cd builds
+tar -cvf ../builds.tar .
+tar -cvzf ../builds.tgz .
