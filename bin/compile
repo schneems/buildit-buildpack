@@ -4,8 +4,9 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-output_dir=$BUILD_DIR/builds/
+output_dir=$BUILD_DIR/builds
 
+cd $BUILD_DIR
 
 export_env_dir() {
   env_dir=$1
@@ -25,5 +26,5 @@ export_env_dir $ENV_DIR
 mkdir $output_dir
 $BUILD_DIR/build $output_dir
 
-tar -cvf $BUILD_DIR/builds.tar $output_dir
+tar -cvf builds.tar builds/
 
