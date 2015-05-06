@@ -1,6 +1,6 @@
 # Buildit Buildpack
 
-Runs scripts, generates downloadable tar files
+Runs scripts, generates downloadable tar (and tgz) files.
 
 ## What
 
