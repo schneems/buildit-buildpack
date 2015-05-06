@@ -24,7 +24,7 @@ $ chmod 777 build
 
 Write whatever you want in your build script, the first argument is the output directory (i.e. any files you want to be available after the build needs to go to that dir).
 
-Here's an example of a [buildit file that builds gems]().
+Here's an example of a [buildit file that builds gems](https://github.com/schneems/buildit-gems/blob/master/build).
 
 To have it build bundler you could run
 
